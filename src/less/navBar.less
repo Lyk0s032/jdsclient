@@ -1,0 +1,295 @@
+.navBar{
+    width:100%;
+    height:70px;
+    padding:0px 10px;
+    border-bottom:1px solid #ccc;
+    box-sizing: border-box;
+    display:inline-block;
+    background-color: white;
+    position:fixed;
+    z-index: 1;
+    top:0;
+    .jds{
+        float:left;
+        height:100%;
+        width:30%;
+        display:flex;
+        align-items: center;
+        
+        button{
+            padding:10px;
+            background-color: transparent;
+            border:none;
+            cursor:pointer;
+            outline: 0px;
+            display: none;
+            .icon{
+                font-size:26px;
+                color: @Primary;
+                transition:.3s;
+            }
+        }
+        button:hover{
+            .icon{
+                transform: rotate(10deg);
+            }
+        }
+        
+        h2{
+            font-family: Roboto;
+            margin:0px;
+            color: @Primary;
+        }
+    }
+    .navRight{
+        float:right;
+        min-width:10%;
+        height:100%;
+        align-items: center; 
+        display:flex;
+
+        ul{
+            li{
+                display: inline-block;
+                margin-right:20px;
+                button{
+                    border:none;
+                    background-color: @Default;
+                    color: @Primary;
+                    height: auto;
+                    position:relative;
+                    width:100%;
+                    border-radius:10px;
+                    transition:.3s;
+                    cursor:pointer;
+                    outline: 0px;
+                    .icon{
+                        font-size:23px;
+                        transition: .3s;
+                        vertical-align: middle;
+                        
+                    }
+                    span{
+                        margin-left:5px;
+                        font-size:12px;
+                        font-weight: 100;
+                    }
+                }
+                button:hover{
+                    .icon{
+                        transform: rotate(10deg);
+                    }
+                    span{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.navLeft{
+    width:25%;
+    padding:10px 0px;
+    padding-bottom:0px;
+    box-sizing: border-box;
+    position:fixed;
+    overflow-y: auto;
+    top:70px;
+    bottom:0;
+    left:0;
+    border-right: 1px solid #ccc;
+    transition:.3s;
+    background-color: white;
+
+    .restaurant-profile{
+        width: 100%;
+        border-bottom:1px solid @Opacity;
+        text-align: center;
+
+        .img{
+            height:auto;
+            img{
+                border-radius:100px;
+                width:150px;
+                height:150px;
+                margin-bottom:10px;
+            }
+        }
+        .restaurant-profile-info{
+            padding:10px 0px;
+            h2{
+                font-weight: 100;
+            }
+            span{
+                font-size:14px;
+            }
+        }
+    }
+    .nav-div{
+        width:95%;
+        margin:auto;
+        margin-top:10px;
+        border-bottom:1px solid @Opacity;
+        box-sizing: border-box;
+        padding:10px;
+
+        .title{
+            .icon{
+                vertical-align: middle;
+                font-size:20px;
+                margin-right: 10px;
+                color: @Opacity;
+            }
+            strong{
+                font-weight: 100;
+                vertical-align: bottom;
+                font-size:14px;
+                color: @Opacity;
+            }
+        }
+        nav{
+            margin-top:10px;
+            padding:0px;
+            ul{
+                margin:0px;
+                padding:0px;
+
+                li{
+                    display:flex;
+                    width:95%;
+                    margin-left:5%;
+                    .link{
+                        width:100%;
+                        text-decoration: none;
+                        div{
+                            width:100%;
+                            padding:10px;
+                            box-sizing: border-box;
+                            
+                            .icon{
+                                display:inline-block;
+                                vertical-align: middle;
+                                font-size:20px;
+                                padding-right: 10px;
+                                color: @Primary;
+                            }
+                            span{
+                                vertical-align: bottom;
+                                display:inline-block;
+                                font-size:14px;
+                                font-weight: 200;
+                                color: @Primary;
+                                transition:.3s;
+                            }
+                        }
+                    }
+                }
+                li:hover{
+                    .link{
+                        span{
+                            margin-left:10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .fotter-left{
+        width:100%;
+        margin-top:10px;
+        background-color: #001E3C;
+        box-sizing: border-box;
+        padding:10px;
+        text-align: center;
+
+        .icon{
+            vertical-align: middle;
+            font-size:16px;
+            color: white;
+            margin-right: 10px;
+        }
+        span{
+            font-size:14px;
+            color: white;
+            vertical-align: bottom;
+        }
+    }
+}
+
+@media screen and(max-width:750px){
+    .navBar{
+        .jds{
+            button{
+                display: block;
+            }
+            button:focus{
+                .icon{
+                    transform: rotate(0deg);
+                }
+            }
+        }
+    }
+    .navLeft{
+        transform: translateX(-100%);
+        z-index: 1;
+        background-color:white;
+        width:40%;
+    }
+    .navLeftActive{
+        transform: translateX(0);
+    }
+}
+
+@media screen and(max-width:550px){
+    .navBar{
+        .jds{
+            button{
+                display: block;
+            }            
+        }
+        .navRight{
+            width:60%; 
+            text-align: right;
+            margin:0px;
+            padding:0px;
+            display: block;
+            ul{
+                margin-top:20px;
+                float:right;
+                padding: 0px;
+                li{
+                    margin:0px;
+                    margin-right: 0px;
+                    padding:5px;
+                    button{
+                        .icon{
+                            font-size:22px;
+                            transition: .3s;
+                            vertical-align: middle;
+                            
+                        }
+                        span{
+                            margin-left:5px;
+                            font-size:12px;
+                            font-weight: 100;
+                            display:none;
+                        }
+                    }
+                    button:hover{
+                        .icon{
+                            transform: rotate(10deg);
+                        }
+                        span{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .navLeft{
+        width:90%;
+    }
+}

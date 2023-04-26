@@ -1,0 +1,211 @@
+.universal{
+    margin-left:25%;
+    margin-top:70px;
+    box-sizing: border-box;
+    width:75%;
+    position:relative;
+}
+.rute{
+    padding:10px;
+    width:100%;
+    box-sizing: border-box;
+
+    .items{
+        .icon{
+            vertical-align: middle;
+            color: #666;
+        }
+        span{
+            margin:0px 10px;
+            color: @Opacity;
+            font-size:14px;
+            cursor:pointer;
+        }
+        span:hover{
+            text-decoration:underline;
+        }
+    }
+    
+}
+.box-info{
+    padding:10px;
+    box-sizing: border-box;
+}
+.box{
+    width:24%;
+    border:1px solid #ccc;
+    border-radius: 7px;
+    padding:30px 10px;
+    box-sizing: border-box;
+    display:inline-block;
+    margin-right:5px;
+    background-color: white;
+    transition: .3s;
+
+    .left{
+        display: inline-block;
+        width:70%;
+        vertical-align: middle;
+
+        span{
+            font-size:12px;
+        }
+        h2{
+            font-weight: 100;
+
+        }
+        button{
+            background-color:white;
+            border:none;
+            font-size:12px;
+            font-weight: bold;
+            color: @Primary;
+            float: right;
+            margin:5px;
+            cursor:pointer;
+        }
+        button:hover{
+            text-decoration: underline;
+        }
+    }
+    .right{
+        display: inline-block;
+        width:30%;
+        vertical-align: middle;
+        text-align: center;
+        .icon{
+            font-size:30px;
+            color: @Primary;
+        }
+        .icon.dangery{
+            color: red;
+        }
+    }
+}
+.box:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (max-width:750px){
+    .universal{
+        margin-left:0px;
+        width:100%;
+    }
+}
+
+
+.add-producto-to-receta{
+    position:fixed;
+    right: 0;
+    left: 0;
+    bottom:0;
+    top:0;
+    transition:.3s;
+    transform: translateY(100%);
+    
+    background-color: white;
+    z-index:1;
+    .hidden{
+        width:100%;
+        padding:10px;
+        box-sizing: border-box;
+        background-color: @Default;
+        border:0px;
+        border-bottom:1px solid @BordersOpacity;
+        cursor:pointer;
+        transition:.3s;
+        font-size: 12px;
+        .icon{
+            margin-right: 10px;;
+            vertical-align: middle;
+            transition:.3s;
+        }
+    }
+    .hidden:hover{
+        border-bottom:1px solid @Primary;
+        color:  @Primary;
+    }
+    .header-list-producs{
+        width:100%;
+        padding:10px;
+        box-sizing: border-box;
+
+        
+        h1{
+            font-size: 20px;
+            font-weight: 100;
+        }
+    }
+    .scroll-container-products{
+        width:100%;
+        padding:10px;
+        box-sizing: border-box;
+        height:100%;
+        overflow-y: auto;
+
+        .box-inventary{
+            padding:10px;
+            width:45%;
+            margin-right: 5%;
+            display:inline-block;
+            vertical-align: top;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            .title{
+                padding:10px 0px;
+                border-bottom: 1px solid @BordersOpacity;
+                margin-bottom:10px;
+                strong{
+                    padding:0px;
+                    margin:0px;
+                    font-weight: 100;
+                }
+            }
+
+            .div-container-info-select-div{
+                width:100%;
+                padding:10px;
+                box-sizing: border-box;
+                border-collapse: collapse;
+                tr{
+                    border:1px solid @BordersOpacity;
+                    border-radius: 10px;
+                    td{
+                        width:10%;
+                        text-align: center;
+                        img{
+                            width:50%;
+                        }
+                        span{
+                            font-size:12px;
+                        }
+                        strong{
+                            font-size:12px;
+                        }
+                        button{
+                            padding:5px;
+                            width:40%;
+                            font-size:12px;
+                            border-radius:10px;
+                            border:1px solid @Primary;
+                            background-color: @Default;
+                            color: @Primary;
+                            cursor:pointer;
+                            transition:.3s;
+                        }
+                        button:hover{
+                            transform: scale(1.05);
+                            color: @Default;
+                            background-color: @Primary;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+.add-producto-to-receta-active{
+    transform: translateY(0%);
+}
+

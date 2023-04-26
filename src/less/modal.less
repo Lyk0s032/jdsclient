@@ -1,0 +1,1201 @@
+
+// Modal con 75%
+.modal{
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+    top:0;
+    left:0;
+    margin-left:15%;
+    margin-top:50px;
+    width:70%;
+    border-radius:10px;
+    border:1px solid @Opacity;
+    padding:10px;
+    box-sizing: border-box;
+    height:90%;
+    -webkit-box-shadow: -3px 3px 14px 0px rgba(212,197,212,1);
+    -moz-box-shadow: -3px 3px 14px 0px rgba(212,197,212,1);
+    box-shadow: -3px 3px 14px 0px rgba(212,197,212,1);
+    .modal-dialog{
+        .modal-header{
+            padding:10px;
+            box-sizing: border-box;
+            width:100%;
+            display: inline-block;
+            border-bottom:1px solid @BordersOpacity;
+
+            h1{
+                font-weight: 100;
+                float:left;
+                font-size:24px;
+                color: @Opacity;
+            }
+            button{
+                float:right;
+                border:none;
+                padding:10px;
+                color: @Opacity;
+                background-color: @Default;
+                border-radius:10px;
+                cursor:pointer;
+            }
+            button:hover{
+                color: @Primary;
+            }
+        }
+        .modal-content{
+            margin:10px;
+            padding:10px 0px;
+            height:100%;
+
+            .container-pay-information{
+                position:relative;
+                width: 100%;
+                height:350px;
+                overflow-y: scroll;
+                .header-top{
+                    width:100%;
+                    padding:10px 0px;
+                    display: inline-block;
+                    h3{
+                        float:left;
+                        font-weight: 100;
+                    }
+                    span{
+                        float:right;
+                        font-size:14px;
+                        margin-right: 30px;
+                    }
+                }
+                .products-list-modal{
+                    .item{
+                        width:100%;
+                        padding:10px;
+                        box-sizing: border-box;
+                        border-bottom:1px solid #ccc;
+                        img{
+                            width:60px;
+                            height: 60px;
+                            border-radius: 100px;
+                            display:inline-block;
+                        }
+                        .info-item{
+                            padding:10px 30px;
+                            padding-bottom: 0px;
+                            display: inline-block;
+                            vertical-align: bottom;
+                            box-sizing: border-box;
+                            strong{
+                                font-weight: 200;
+                            }
+                            h2{
+                                font-weight: 100;
+                                color: @Primary;
+                                margin:5px 0px;
+                                font-size:16px;
+                                margin-bottom: 0px;
+                                span{
+                                    font-size:10px;
+                                    color: @Primary;
+                                }
+                            }
+                            span{
+                                color: #666;
+                                font-size:12px;
+                            }
+                        }
+                    }
+                }
+            }
+            .modal-footer{
+                margin-top:10px;
+                padding:30px;
+                width:100%;
+                border:1px solid @BordersOpacity;
+                border-radius: 100px;
+                box-sizing: border-box;
+                border-top:2px solid @Primary;
+                strong{
+                    color: @Opacity;
+                }
+                h3{
+                    font-weight: 100;
+                    color: @Primary;
+                    margin:10px 10px 0px 0px;
+                    span{
+                        font-size:14px;
+                        
+                    }
+                }
+                span{
+                    font-size:12px;
+                    color: black;
+                }
+            }
+        }
+    }
+
+}
+
+// Modal 90%
+.modal-finance{
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+    left:0;
+    bottom:0;
+    width:100%;
+    border-radius:10px 10px 0px 0px;
+    border:1px solid @BordersOpacity;
+    padding:10px;
+    box-sizing: border-box;
+    height:88%;
+
+    .modal-dialog{
+        .modal-header{
+            padding:10px;
+            box-sizing: border-box;
+            width:100%;
+            display: inline-block;
+            border-bottom:1px solid @BordersOpacity;
+            border-bottom:1px solid @Primary;
+
+            h1{
+                font-weight: 100;
+                float:left;
+                font-size:24px;
+                color: @Opacity;
+            }
+            button{
+                float:right;
+                border:none;
+                padding:10px;
+                color: @Opacity;
+                background-color: @Default;
+                border-radius:10px;
+                cursor:pointer;
+            }
+            button:hover{
+                color: @Primary;
+            }
+        }
+        .container-modal-finance{
+            margin:10px;
+            padding:10px 0px;
+            height:100%;
+
+            .container-pay-information{
+                position:relative;
+                width: 100%;
+                height:400px;
+                overflow-y: scroll;
+                
+                table{
+                    border:1px solid @BordersOpacity;
+                    width:100%;
+                    background-color: @Default;
+                    text-align: left;
+                    border-collapse: collapse;
+
+                    h1{
+                        font-size:30px;
+                        font-weight: 100;
+                        padding:10px;
+                    }
+                    th,td{
+                        margin:0px;
+                        padding:20px;
+                    }
+                    thead{
+                        background-color: @Primary;
+                        color: @Default;
+                        font-size:14px;
+                        border-bottom:2px solid @Primary;
+    
+                        tr{
+                            cursor: default;
+                            background-color: @Primary;
+                        }
+                        tr:hover{
+                            background-color: @Primary;
+    
+                        }
+                    }
+                    tr{
+                        font-size:12px;
+                        transition:.3s;
+                        cursor:pointer;
+                        border-bottom:1px solid @BordersOpacity;
+                        
+                    }
+                    tr:hover{
+                        background-color: #ccc;
+                    }
+                }
+            }
+            .modal-footer{
+                margin-top:10px;
+                padding:20px;
+                width:100%;
+                border:1px solid @BordersOpacity;
+                box-sizing: border-box;
+                button{
+                    padding:10px;
+                    border-radius:10px;
+                    border:1px solid @BordersOpacity;
+                    background-color: @Default;
+                    color: @Opacity;
+                    cursor:pointer;
+                    transition: .3s;
+                }
+                button:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:700px){
+    .modal-finance{
+        padding:0px;
+        height: auto;
+        max-height: 90%;
+        .modal-dialog{
+            .modal-header{
+                padding:10px 10px;
+                margin:0px;
+                h1{
+                    font-size:20px;
+                }
+                button{
+                    padding:0px;
+                    margin-right: 10px;
+                }
+            }
+            .container-modal-finance{
+                margin:0px;
+                border:none;
+
+                .container-pay-information{
+                    border:none;
+                    height:auto;
+
+                    table{
+                        border:none;
+                        .responsive-h{
+                            display:none;
+                        }
+                        thead{
+                            border:none;
+                            background-color: @Default;
+
+                            tr{
+                                background-color: @Primary;
+                                th{
+                                    background-color: @Default;
+                                    color: black;
+                                    font-size:12px;
+                                }
+                            }
+                        }
+                        tbody{
+                            h1{
+                                font-size:14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Modal Create Product
+
+.modal-create-product{
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+    top:0;
+    left:0;
+    width:80%;
+    margin-left:10%;
+    border-radius:10px 10px 0px 0px;
+    border:1px solid @BordersOpacity;
+    padding:10px;
+    box-sizing: border-box;
+
+    .modal-dialog{
+        .modal-header{
+            padding:10px;
+            box-sizing: border-box;
+            width:100%;
+            display: inline-block;
+            border-bottom:1px solid @BordersOpacity;
+            border-bottom:1px solid @Primary;
+
+            h1{
+                font-weight: 100;
+                float:left;
+                font-size:24px;
+                color: @Opacity;
+            }
+            button{
+                float:right;
+                border:none;
+                padding:10px;
+                color: @Opacity;
+                background-color: @Default;
+                border-radius:10px;
+                cursor:pointer;
+            }
+            button:hover{
+                color: @Primary;
+            }
+        }
+        .container-modal-createProduct{
+            margin:10px;
+            padding:10px 0px;
+            height:500px;
+            overflow-y: auto;
+            padding-bottom: 70px;
+            
+
+            .container-form{
+                display: inline-block;
+                width: 100%;
+                form{
+                    .left{
+                        float:left;
+                        width:40%;
+                        box-sizing: border-box;
+
+                        .form-box{
+                            width:100%;
+                            padding:10px;
+                            box-sizing: border-box;
+                            text-align: center;
+                            .img{
+                                width: 70%;
+                                height:200px;
+                                margin:auto;
+                                margin-top:10px;
+                                border:1px solid @BordersOpacity;
+                                padding:10px;
+                                box-sizing: border-box;
+                                
+                                img{
+                                    width:100%;
+                                    height:100%;
+                                    border:1px solid @Default;
+                                }
+                            }
+                            .input-img{
+                                width:60%;
+                                padding:10px;
+                                box-sizing: border-box;
+                                border-radius:10px;
+                                border:1px solid @BordersOpacity;
+                                margin-top:10px;
+                                outline: 0px;
+                                transition:.3s;
+                            }
+                            .input-img:focus{
+                                border:1px solid @Amigable;
+                            }
+                            button{
+                                margin-top:20px;
+                                width:50%;
+                                border-radius:50px;
+                                background-color: @Primary;
+                                border:1px solid @Primary;
+                                color: @Default;
+                                font-size:12px;
+                                padding:10px;
+                                cursor:pointer;
+                                
+
+                            }
+                        }
+                    }
+                    .right{
+                        float:right;
+                        width:60%;
+                        box-sizing: border-box;
+                        height: auto;
+
+                        .form-inputs{
+                            padding:10px;
+                            box-sizing: border-box;
+                            
+                            .responsive{
+                                width:50%;
+                                padding:10px;
+                                display: inline-block;
+                                box-sizing: border-box;
+                                vertical-align: top;
+                                label{
+                                    font-size:14px;
+                                    color: @Opacity;
+    
+                                }
+                                .input{
+                                    width:100%;
+                                    border:1px solid @BordersOpacity;
+                                    padding:10px;
+                                    color: @Opacity;
+                                    box-sizing: border-box;
+                                    outline: 0px;
+                                }
+                            }
+                            .responsive.select{
+                                width:100%;
+
+                                span{
+                                    font-size:12px;
+                                    color: black;
+                                }
+                                .input.select{
+                                    background-color: @Default;
+                                    color: black;
+
+                                    option{
+                                        font-size:12px;
+                                        font-family: Arial, Helvetica, sans-serif;
+                                    }
+                                }
+                                textarea{
+                                    resize:none;
+                                    width:100%;
+                                    height:150px;
+                                    border:1px solid @BordersOpacity;
+                                    padding:10px;
+                                    font-size:12px;
+                                    box-sizing: border-box;
+                                    outline: 0px;
+                                }
+                            }
+                            .create-btn{
+                                width:40%;
+                                padding:10px;
+                                border-radius: 50px;
+                                margin-left:10px;
+                                border:1px solid @Primary;
+                                background-color: @Default;
+                                color: @Primary;
+                                font-size:12px;
+                                cursor:pointer;
+                                
+                            }
+                            .loading{
+                                width:25%;
+                                margin-left:10px;
+                                float:right;
+                            }
+                            .error{
+                                font-size:12px;
+                                color: @Danger;
+                            }
+                        }
+                    }
+                    .right.center{
+                        width:100%;
+                    }
+                }
+            }
+            .modal-footer{
+                margin-top:10px;
+                padding:20px;
+                width:100%;
+                border:1px solid @BordersOpacity;
+                box-sizing: border-box;
+                span{
+                    font-size:12px;
+                    color: @Opacity;
+                }
+            }
+        }
+    }
+
+}
+
+.modal-facture{
+        background-color: white;
+        position: fixed;
+        z-index: 2;
+        top:0;
+        left:0;
+        width:80%;
+        margin-left:10%;
+        margin-top:2%;
+        min-height:90%;
+        border-radius:10px 10px 0px 0px;
+        border:1px solid @BordersOpacity;
+        padding:10px;
+        box-sizing: border-box;
+    
+        .modal-dialog{
+            .modal-header{
+                display:inline-block;
+                width:100%;
+                box-sizing: border-box;
+                h1{
+                    float:left;
+                    font-weight: 100;
+                }
+                h3{
+                    font-weight: 100;
+                    float:left;
+                }
+                button{
+                    float:right;
+                    padding:10px;
+                    font-size:14px;
+                    background-color: @Default;
+                    border:none;
+                    color: @Primary;
+                    cursor:pointer;
+                }
+            }
+            .container-modal-facture{
+                padding:10px;
+                max-height:500px;
+                overflow-y: auto;
+                .container-form{
+                    .left{
+                        display:inline-block;
+                        width:70%;
+                        box-sizing: border-box;
+
+                        .first-table{
+                            table{
+                                width:100%;
+                                tbody{
+                                    th{
+                                        padding:10px;
+                                        font-size:14px;
+                                        text-align: left;
+                                        font-weight: 100;
+            
+                                    }
+                                    .first-space{
+                                        text-align: left;    
+                                        font-size:14px;
+                                        font-weight: 300;
+                                    }
+                                }
+                            }
+                        }
+                        .second-table{
+                            margin-top:50px;
+                            border-top:1px solid  @BordersOpacity;
+                            table{
+                                width:100%;
+            
+                                thead{
+                                    td{
+                                        th{
+                                            padding:10px;
+                                            text-align: left;
+                                            font-weight: 100;
+                                            font-size:14px;
+                                        }
+                                    }
+                                }
+                                tbody{
+                                    tr{
+                                        border:1px solid black;
+                                        th{
+                                            text-align: left;
+                                            padding:10px;
+                                            font-size:14px;
+                                            font-weight: 100;
+                                            strong{
+                                                font-weight: bold;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                
+                    }
+                    .right{
+                        display: inline-block;
+                        width:30%;
+                        box-sizing: border-box;
+                        vertical-align: top;
+                        text-align: right;
+                        img{
+                            width:100px;
+                            height:100px;
+                            border-radius:100px;
+                        }
+                    }
+                    .container-graph{
+                        width:100%;
+                        box-sizing: border-box;
+
+                        .date{
+                            width:50%;
+                            box-sizing: border-box;
+                            display:inline-block;
+                            padding:10px;
+                            vertical-align: top;
+
+                            h3{
+                                margin:20px 0px;
+                                font-weight: 100;
+                            }
+                        }
+                    }
+                    .container-reduce-graph{
+                        width:100%;
+                        margin-top:10px;
+                        .date{
+                            padding:10px 0px;
+                            .lecture{
+                                padding:10px 0px;
+
+                                .icon{
+                                    vertical-align: middle;
+                                    margin-right: 10px;
+                                    color: green;
+                                    font-size:20px;
+                                }
+                                span{
+                                    font-size:12px;
+                                    vertical-align: bottom;
+                                    color: @Opacity;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .modal-footer{
+                    margin-top:30px;
+                    border-top:1px solid  @BordersOpacity;
+                    display:inline-block;
+                    width:100%;
+
+                    span{
+                        font-size: 14px;
+                        color: #666;
+
+                    }
+                    img{
+                        margin-top:20px;
+                        float:left;
+                        margin-right: 10px;
+                        margin-bottom:10px;
+                        width:100px;
+                        height:100px;
+                        margin:10px 50px;
+                    }
+                }
+                .download{
+                    padding:10px;
+                    background-color: @Default;
+                    border:1px solid @Primary;
+                    color: @Primary;
+                    transition:.3s;
+                    margin-top:50px;
+                    cursor:pointer;
+                }
+                .download:hover{
+                    background-color: @Primary;
+                    color:@Default;
+                }
+                .modal-footer-exist{
+                    margin-top:30px;
+                    border-top:1px solid  @BordersOpacity;
+                    display:inline-block;
+                    width:100%;
+
+                    span{
+                        font-size: 14px;
+                        color: #666;
+
+                    }
+                    img{
+                        margin-top:20px;
+                        float:left;
+                        margin-right: 10px;
+                        margin-bottom:10px;
+                        width:100px;
+                        height:100px;
+                        margin:10px 50px;
+                    }
+                }
+                
+            }
+        }
+}
+@media screen and (max-width:700px){
+    .modal-facture{
+        width: 100%;
+        margin-left:0%;
+        bottom:0;
+        top:0;
+        margin-top:0%;
+        border-radius: 0px;
+        overflow-y: auto;
+        .modal-dialog{
+            .modal-header{
+                h1{
+                    font-size:24px;
+                    color: #666;
+                }
+            }
+            .container-modal-facture{
+                .container-form{
+                    width:100%;
+                    .left{
+                        width:90%;
+
+                        .second-table{
+                            table{
+                                thead{
+                                    td{
+                                        th{
+                                            font-size:12px;
+                                        }
+                                    }
+                                }
+                                tbody{
+                                    tr{
+                                        th{
+                                            font-size:12px;
+
+                                            strong{
+                                                font-weight: 400;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .right{
+                        width:10%;
+                        img{
+                            width:100%;
+                            height:1%;
+                        }
+                    }
+
+                    .container-graph{
+                        .date{
+                            width:100%;
+                        }
+                    }
+                    .container-reduce-graph{
+                        .date{
+                            .lecture{
+                                span{
+                                    font-size:14px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .modal-footer{
+                    span{
+                        font-size:12px;
+                    }
+                    img{
+                        width:20%;
+                    }
+                }
+                
+            }
+        }
+    }
+
+}
+@media screen and (max-width:700px){
+    .modal-create-product{
+        width:100%;
+        margin-left:0%;
+        bottom:0;
+
+        .modal-dialog{
+            .modal-header{
+                padding:10px;
+                box-sizing: border-box;
+                width:100%;
+                display: inline-block;
+                border-bottom:1px solid @BordersOpacity;
+                border-bottom:1px solid @Primary;
+    
+                h1{
+                    font-weight: 100;
+                    float:left;
+                    font-size:24px;
+                    width:70%;
+                    color: @Opacity;
+                }
+                button{
+                    float:right;
+                    border:none;
+                    padding:10px;
+                    color: @Opacity;
+                    background-color: @Default;
+                    border-radius:10px;
+                    cursor:pointer;
+                }
+                button:hover{
+                    color: @Primary;
+                }
+            }
+            .container-modal-createProduct{
+                margin:10px;
+                padding:10px 0px;
+                overflow-y: auto;
+                
+    
+                .container-form{
+                    display: inline-block;
+                    width: 100%;
+                    form{
+                        .left{
+                            float:left;
+                            width:100%;
+                            box-sizing: border-box;
+    
+                            .form-box{
+                                width:100%;
+                                padding:0px;
+                                box-sizing: border-box;
+                                text-align: center;
+                                .img{
+                                    width: 100%;
+                                    height:100px;
+                                    margin:auto;
+                                    margin-top:10px;
+                                    border:1px solid @BordersOpacity;
+                                    padding:10px;
+                                    box-sizing: border-box;
+                                }
+                                button{
+                                    margin-top:20px;
+                                    width:100%;
+                                    border-radius:50px;
+                                    background-color: @Default;
+                                    border:1px solid @Opacity;
+                                    color: @Opacity;
+                                    font-size:12px;
+                                    padding:10px;
+                                    
+    
+                                }
+                            }
+                        }
+                        .right{
+                            float:right;
+                            width:100%;
+                            box-sizing: border-box;
+                            margin-top:20px;
+                            .form-inputs{
+                                padding:0px;
+                                box-sizing: border-box;
+                                
+                                .responsive{
+                                    width:100%;
+                                    padding:10px;
+                                    display: inline-block;
+                                    box-sizing: border-box;
+                                    vertical-align: top;
+                                    label{
+                                        font-size:14px;
+                                        color: @Opacity;
+        
+                                    }
+                                    .input{
+                                        width:100%;
+                                        border:none;
+                                        border-bottom:1px solid @BordersOpacity;
+                                        padding:10px;
+                                        color: @Opacity;
+                                        box-sizing: border-box;
+                                        outline: 0px;
+                                    }
+                                }
+                                .responsive.select{
+                                    width:100%;
+    
+                                    span{
+                                        font-size:12px;
+                                        color: black;
+                                    }
+                                    .input.select{
+                                        background-color: @Default;
+                                        color: black;
+    
+                                        option{
+                                            font-size:12px;
+                                            font-family: Arial, Helvetica, sans-serif;
+                                        }
+                                    }
+                                    textarea{
+                                        resize:none;
+                                        width:100%;
+                                        height:60px;
+                                        border:1px solid @BordersOpacity;
+                                        padding:10px;
+                                        font-size:12px;
+                                        box-sizing: border-box;
+                                        outline: 0px;
+                                    }
+                                }
+                                .create-btn{
+                                    width:100%;
+                                    padding:10px;
+                                    border-radius: 50px;
+                                    margin-left:0px;
+                                    border:1px solid @Primary;
+                                    background-color: @Default;
+                                    color: @Primary;
+                                    font-size:12px;
+                                    box-sizing: border-box;
+                                }
+                            }
+                        }
+                        .right.center{
+                            width:100%;
+                        }
+                    }
+                }
+                .modal-footer{
+                    margin-top:10px;
+                    padding:20px;
+                    width:100%;
+                    border:1px solid @BordersOpacity;
+                    box-sizing: border-box;
+                    span{
+                        font-size:12px;
+                        color: @Opacity;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal-create-user{
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+    top:0;
+    left:0;
+    width:80%;
+    margin-left:10%;
+    margin-top:2%;
+    min-height:90%;
+    border-radius:10px 10px 0px 0px;
+    border:1px solid @BordersOpacity;
+    padding:10px;
+    box-sizing: border-box;
+
+    .modal-dialog{
+        .modal-header{
+            display:inline-block;
+            width:100%;
+            box-sizing: border-box;
+            h1{
+                float:left;
+                font-weight: 100;
+            }
+            h3{
+                font-weight: 100;
+                float:left;
+            }
+            button{
+                float:right;
+                padding:10px;
+                font-size:14px;
+                background-color: @Default;
+                border:none;
+                color: @Primary;
+                cursor:pointer;
+            }
+        }
+        .container-modal-facture{
+            padding:10px;
+            max-height:500px;
+            overflow-y: auto;
+            .container-form{
+                .left{
+                    display:inline-block;
+                    width:70%;
+                    box-sizing: border-box;
+
+                    .first-table{
+                        table{
+                            width:100%;
+                            tbody{
+                                th{
+                                    padding:10px;
+                                    font-size:14px;
+                                    text-align: left;
+                                    font-weight: 100;
+        
+                                }
+                                .first-space{
+                                    text-align: left;    
+                                    font-size:14px;
+                                    font-weight: 300;
+                                }
+                            }
+                        }
+                    }
+                    .second-table{
+                        margin-top:50px;
+                        border-top:1px solid  @BordersOpacity;
+                        table{
+                            width:100%;
+        
+                            thead{
+                                td{
+                                    th{
+                                        padding:10px;
+                                        text-align: left;
+                                        font-weight: 100;
+                                        font-size:14px;
+                                    }
+                                }
+                            }
+                            tbody{
+                                tr{
+                                    border:1px solid black;
+                                    th{
+                                        text-align: left;
+                                        padding:10px;
+                                        font-size:14px;
+                                        font-weight: 100;
+                                        strong{
+                                            font-weight: bold;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+            
+                }
+                .right{
+                    display: inline-block;
+                    width:30%;
+                    box-sizing: border-box;
+                    vertical-align: top;
+                    text-align: right;
+                    img{
+                        width:100px;
+                        height:100px;
+                        border-radius:100px;
+                    }
+                }
+                .container-graph{
+                    width:100%;
+                    box-sizing: border-box;
+
+                    .date{
+                        width:50%;
+                        box-sizing: border-box;
+                        display:inline-block;
+                        padding:10px;
+                        vertical-align: top;
+
+                        h3{
+                            margin:20px 0px;
+                            font-weight: 100;
+                        }
+                    }
+                }
+                .container-reduce-graph{
+                    width:100%;
+                    margin-top:10px;
+                    .date{
+                        padding:10px 0px;
+                        .lecture{
+                            padding:10px 0px;
+
+                            .icon{
+                                vertical-align: middle;
+                                margin-right: 10px;
+                                color: green;
+                                font-size:20px;
+                            }
+                            span{
+                                font-size:12px;
+                                vertical-align: bottom;
+                                color: @Opacity;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .modal-footer{
+                margin-top:30px;
+                border-top:1px solid  @BordersOpacity;
+                display:inline-block;
+                width:100%;
+
+                span{
+                    font-size: 14px;
+                    color: #666;
+
+                }
+                img{
+                    margin-top:20px;
+                    float:left;
+                    margin-right: 10px;
+                    margin-bottom:10px;
+                    width:100px;
+                    height:100px;
+                    margin:10px 50px;
+                }
+            }
+            .download{
+                padding:10px;
+                background-color: @Default;
+                border:1px solid @Primary;
+                color: @Primary;
+                transition:.3s;
+                margin-top:50px;
+                cursor:pointer;
+            }
+            .download:hover{
+                background-color: @Primary;
+                color:@Default;
+            }
+            .modal-footer-exist{
+                margin-top:30px;
+                border-top:1px solid  @BordersOpacity;
+                display:inline-block;
+                width:100%;
+
+                span{
+                    font-size: 14px;
+                    color: #666;
+
+                }
+                img{
+                    margin-top:20px;
+                    float:left;
+                    margin-right: 10px;
+                    margin-bottom:10px;
+                    width:100px;
+                    height:100px;
+                    margin:10px 50px;
+                }
+            }
+            
+        }
+    }
+}
+

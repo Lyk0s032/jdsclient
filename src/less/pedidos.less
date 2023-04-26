@@ -1,0 +1,467 @@
+.restaurante{
+    width:100%;
+    border-top:1px solid @BordersOpacity;
+    .container-mesas{
+        width:100%;
+        box-sizing: border-box;
+        background-color: @Default;
+        padding:10px;
+        .box-mesa{
+            width:20%;
+            border:1px solid @Opacity;
+            border-radius: 10px;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 4%;
+            background-color: @Default;
+            -webkit-box-shadow: 2px 0px 5px -6px rgba(0,0,0,0.75);
+            -moz-box-shadow: 2px 0px 5px -6px rgba(0,0,0,0.75);
+            box-shadow: 2px 0px 5px -6px rgba(0,0,0,0.75);
+            cursor: pointer;
+            transition:.3s;
+
+            .header-box{
+                border-radius: 10px 10px 0px 0px;
+                padding:50px 10px;
+                text-align: center;
+                background-color: @Opacity;
+                border-bottom:1px solid @BordersOpacity;
+                h1{
+                    font-weight: 100;
+                    color: @Default;
+                }
+            }
+            .desc{
+                padding:10px;
+                background-color: @Default;
+                
+                .icon{
+                    vertical-align: middle;
+                }
+                span{
+                    margin-left: 5px;
+                    font-size:14px;
+                    color: #666;
+                }
+            }
+            .bottom-nav{
+                background-color: @Default;
+                padding:10px;
+                margin-top:30px;
+                border-radius: 0px 0px 10px 10px;
+                ul{
+                    li{
+                        display: inline-block;
+                        text-align: center;
+                        margin-right:20px;
+                       .icon{
+                            vertical-align: middle;
+                       } 
+                       .icon.check{
+                            color: green;
+                       }
+                       span{
+                        vertical-align: top;
+                        font-size:10px;
+                       }
+                    }
+                }
+            }
+        }
+        .box-mesa:hover{
+            transform: scale(1.05);
+        }
+        
+        .box-mesa.estado-2{
+            border:1px solid green;
+
+            .header-box{
+                background-color: green;
+                transition: .3s;
+            }
+            .header-box:hover{
+                background-color: @Default;
+                h1{
+                    color: green;
+                }
+            }
+        }
+    }
+
+    // Ventana modal
+    .loadingModal{
+        position: fixed;
+        width:100%;
+        left:0;
+        top:50%;
+        text-align: center;
+
+        h1{
+            font-weight: 100;
+        }
+    }
+    .mesa-modal{
+        position:fixed;
+        left:0;
+        bottom: 0;
+        right: 0;
+        top:0;
+        margin:2%;
+        z-index: 2;
+        border:1px solid @BordersOpacity;
+        background-color: @Default;
+        border-radius:10px;
+
+        .header-modal{
+            padding:10px;
+            border-bottom:1px solid @BordersOpacity;
+            display: inline-block;
+            width:100%;
+            box-sizing: border-box;
+            h1{
+                font-weight: 100;
+                font-size:30px;
+                float:left;
+            }
+            button{
+                float:right;
+                margin-top:10px;
+                background-color: @Default;
+                border:none; 
+                cursor: pointer;
+                .icon{
+                    font-size: 20px;
+                    transform: .3s;
+                }
+            }
+            button:hover{
+                .icon{
+                    color: @Danger;
+                }
+            }
+        }
+        .nav-mesa{
+            width: 5%;
+            float: left;
+            max-height:90%;
+
+            nav{
+                ul{
+                    li{
+                        display: flex;
+                        padding: 30px 10px;
+                        text-align: center;
+                        cursor: pointer;                
+                        .icon{
+                            font-size:20px;
+                            margin:auto;
+                        }
+                    }
+                }
+            }
+        }
+        .alert-mesa{
+            position:absolute;
+            right: 0;
+            left:0;
+            top:0;
+            margin-top:60px;
+
+            .style-alert{
+                border:1px solid @Danger;
+                background-color: @Danger;
+                width:90%;
+                margin-left:5%;
+                padding:10px;
+                border-radius:10px;
+
+                span{
+                    color: @Default;
+                }
+                button{
+                    float: right;
+                    margin:5px;
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                    .icon{
+                        color: @Default;
+                    }
+                }
+                
+            }
+        }
+        .info-map{
+            float:right;
+            box-sizing: border-box;
+            width:95%;
+            height:85%;
+            overflow-y: auto;
+            .container-title{
+                padding:10px;
+                border-bottom: 1px solid @BordersOpacity;
+                h1{
+                    font-size:20px;
+                    font-weight: 100;
+                }
+            }
+
+            // Contenedor de general información
+            .container-general-info{
+                padding:10px;
+                box-sizing: border-box;
+
+                .complete-div-pay{
+                    .titleH1{
+                        font-weight: 100;
+                    }
+                }
+                .left{
+                    width:50%;
+                    box-sizing: border-box;
+                    display: inline-block;
+                    vertical-align: top;
+                    text-align: right;
+                    .container-cuenta-count{
+                        padding:10px;
+
+                        .used-time{
+                            font-size: 12px;
+                            strong{
+                                font-weight: 400;
+                            }
+                        }
+                        .currently_valor{
+                            font-size:14px;
+                            font-weight: 100;
+                            color: #666;
+                        }
+
+                        h1{
+                            font-weight: 100;
+                            margin-top:10px;
+                            font-size:40px;
+
+                            span{
+                                font-size:14px;
+                            }
+                        }
+
+
+                    }
+                    .container-cuenta-count.iwannapay{
+                        border:2px solid @Danger;
+                        border-bottom:none;
+                        padding:60px;
+                        padding-bottom:30px;
+                        margin-top:50px;
+                    }
+                    .form-optios{
+                        padding:60px;
+                        padding-top:0px;
+                        border:2px solid @Danger;
+                        border-top:none;
+
+                        form{
+                            .cargando{
+                                position:fixed;
+                                left:0;
+                                right: 0;
+                                top:0;
+                                bottom:0;
+                                text-align: center;
+                                display:none;
+
+                                div{
+                                    margin-top:20%;
+                                    background-color: @Default;
+                                    border:1px solid @Primary;
+                                    padding:10px;
+                                    box-sizing: border-box;
+                                    border-right: 0px;
+                                    border-left: 0px;
+                                    -webkit-box-shadow: -1px 1px 7px -4px rgba(0,0,0,0.75);
+                                    -moz-box-shadow: -1px 1px 7px -4px rgba(0,0,0,0.75);
+                                    box-shadow: -1px 1px 7px -4px rgba(0,0,0,0.75);
+                                    img{
+                                        width:5%;
+                                        display:inline-block;
+                                        vertical-align: middle;
+                                    }
+                                    h1{
+                                        padding:10px;
+                                        font-weight: 100;
+                                        box-sizing: border-box;
+                                        color: @Primary;
+                                        display:inline-block;
+                                        vertical-align: middle;
+
+                                    }
+                                }
+                            }
+                            label{
+                                font-size:14px;
+                                color: #666;
+                            }
+                            .select{
+                                width:60%;
+                                margin-top:10px;
+                                padding:10px;
+                                background-color: transparent;
+                                border:1px solid #666;
+                                border-radius:20px;
+                                color: #666;
+                                cursor:pointer;
+
+                                option{
+                                    padding:10px;
+                                    color: #666;
+                                    font-family: Arial, Helvetica, sans-serif;
+                                    background-color: @Default;
+                                }
+                            }
+                            button{
+                                padding:10px;
+                                width:60%;
+                                margin-top:10px;
+                                background-color: @Amigable;
+                                border:none;
+                                border-radius:20px;
+                                color: white;
+                                box-sizing: border-box;
+                                cursor:pointer;
+                            }
+                        }
+                    }
+                }
+                .right{
+                    width:50%;
+                    box-sizing: border-box;
+                    display: inline-block;
+                    vertical-align: top;
+                    text-align: center;
+                    img{
+                        width:20%;
+                    }
+                    .info-table{
+                        
+                        h1{
+                            font-size:20px;
+                            font-weight: 100;
+                        }
+                        span{
+                            font-size:14px;
+                        }
+                    }
+
+                }
+            }
+            // Lista
+            .divider-state-pedido{
+                margin-top:10px;
+                padding:10px;
+                margin-bottom:40px;
+                h3{
+                    font-weight: 400;
+                    font-size:16px;
+                }
+
+                table{
+                    width:90%;
+                    margin-left:1%;
+                    margin-top:20px;
+                    border-collapse: collapse;
+                    thead{
+                        tr{
+                            th{
+                                text-align: left;
+                                padding:10px;
+                                font-weight: 100;
+                                font-size: 12px;
+                                border-bottom:1px solid #ccc;
+                            }
+                        }
+                    }
+                    tbody{
+                        span{
+                            font-size:12px;
+                            color: #666;
+                        }
+                        tr{
+                            td{
+                                padding:10px;
+                                font-size: 12px;
+                                border:1px solid @BordersOpacity;
+                                border-left:0px;
+                                border-right: 0px;
+                                img{
+                                    width:50px;
+                                    height:50px;
+                                    border-radius: 100px;
+                                    vertical-align: middle;
+                                    margin-right: 20px;
+                                }
+                                .confirm{
+                                    padding:5px 10px;
+                                    background-color: @Amigable;
+                                    border: 1px solid @Amigable;
+                                    color: @Default;
+                                    border-radius:10px;
+                                    cursor:pointer;
+                                    font-size:12px;
+                                    transition:.3s;
+
+                                }
+                                .confirm:hover{
+                                    transform: scale(1.1);
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px){
+    .restaurante{
+        .container-mesas{
+            .box-mesa{
+                width:30%;
+
+                .header-box{
+                    padding:20px 10px;
+                    
+                    h1{
+                        font-size:20px;
+                    }
+                }
+                .bottom-nav{
+                    margin-top:10px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:500px){
+    .restaurante{
+        .container-mesas{
+            .box-mesa{
+                width:40%;
+
+                .header-box{
+                    padding:20px 10px;
+                    
+                    h1{
+                        font-size:20px;
+                    }
+                }
+                .bottom-nav{
+                    margin-top:10px;
+                }
+            }
+        }
+    }
+}

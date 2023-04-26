@@ -1,0 +1,2539 @@
+.div-container-component{
+    width:100%;
+    padding:10px;
+    box-sizing: border-box;
+    height:auto;
+
+    .title{
+        width:100%;
+        box-sizing: border-box;
+        padding:10px 0px;
+        h3{
+            font-weight: 100;
+        }
+    }
+
+    // Largo de 70%
+    .large{
+        width:60%;
+        display:inline-block;
+        border:1px solid @BordersOpacity;
+        border-radius:10px 10px 0px 0px;
+        box-sizing: border-box;
+        vertical-align: top;
+        background-color: white;
+        border-radius:10px;
+
+        .container-img{
+            width:100%;
+            border-radius: 10px 10px 0px 0px;
+            height:300px;
+            img{
+                width:100%;
+                height:100%;
+                border-radius: 10px 10px 0px 0px;
+
+            }
+        }
+        .panel-info-details{
+            margin-top:5px;
+            padding:10px;
+            text-align: center;
+            nav{
+                width:100%;
+                ul{
+                    padding:0px;
+                    margin:0px;
+                    li{
+                        display: inline-block;
+                        width:auto;
+                        margin:0px 5px;
+                        button{
+                            padding:5px 10px;
+                            border-radius:100px;
+                            border:1px solid @BordersOpacity;
+                            background-color: @Default;
+                            color: @Opacity;
+                            cursor: pointer;
+                            transition:.3s;
+                            .icon{
+                                vertical-align: middle;
+                                margin-right: 5px;
+                                color: @Primary;
+                                font-size:16px
+                            }
+                            .icon.pd{
+                                color: yellow;
+                            }
+                            span{
+                                vertical-align: bottom;
+                                font-size:12px;
+                                font-weight: 200;
+                                strong{
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                        button:hover{
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+            }
+        }
+    }
+ 
+    // Pequeño de 30%
+    .small{
+        width:35%;
+        display: inline-block;
+        vertical-align: top;
+        border:1px solid @BordersOpacity;
+        background-color:@Default;
+        margin:0px 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        height:100%;
+
+        .img-container{
+            width:100%;
+            height:300px;
+            img{
+                width:100%;
+                height: 100%;
+            }
+        }
+        .panel-info-details{
+            width:100%;
+            padding:10px;
+            box-sizing: border-box;
+            h2{
+                font-weight: 200;
+                font-size:12px;
+            }
+            .icon{
+                vertical-align: middle;
+                font-size:16px;
+                color:green;
+                margin-right: 10px;
+            }
+            span{
+                vertical-align: bottom;
+                font-size:13px;
+                color: @Opacity;
+            }
+        }
+    }
+    
+    // Lista de pequeños
+    .list-box{
+        display:inline-block;
+        width:100%;
+
+        .small-box{
+            width:31%;
+            box-sizing: border-box;
+            border:1px solid @BordersOpacity;
+            float:left;
+            background-color: white;
+            margin-right:1.5%;
+            padding:40px 10px;
+            border-radius: 7px;
+            transition: .3s;
+            cursor: pointer;
+            margin-bottom:20px;
+
+            .left{
+                width:70%;
+                box-sizing: border-box;
+                vertical-align: middle;
+                display:inline-block;
+
+
+                strong{
+                    font-size:12px;
+                    font-weight: 100;
+                }
+                h2{
+                    font-weight: 100;
+                    font-size:24px;
+                    padding:0px;
+                    margin:0px;
+                    span{
+                        font-size:12px;
+                        margin-left:5px;
+                    }
+                }
+            }
+            .right{
+                display:inline-block;
+                vertical-align: middle;
+                width:30%;
+                text-align: center;
+                box-sizing: border-box;
+
+                .icon{
+                    font-size:40px;
+                    color: @Primary;
+                    transition:.6s;
+                }
+                .icon.danger{
+                    color: @Danger;
+                }
+                
+            }
+        }
+        .small-box:hover{
+            transform: scale(1.05);
+
+            .right{
+                .icon{
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+
+    
+    // Contenedor de Graficas
+    .container-graphi{
+        box-sizing: border-box;
+        display: inline-block;
+        width:100%;
+        
+        .big-graphi{
+            width:65%;
+            float:left;
+            height:400px;
+            box-sizing: border-box;
+            padding:10px;
+            padding-left:0px;
+            
+
+
+            .graphi{
+                width: 100%;
+                height:100%;
+                background-color: white;
+                border:1px solid @BordersOpacity;
+                border-radius:10px;
+
+                img{
+                    width:100%;
+                    height:100%;
+                    border-radius:10px;
+                }
+            }
+        }
+        .small-graphi{
+            width:31%;
+            padding:10px;
+            box-sizing: border-box;
+            float:right;
+            height:200px;
+            margin:auto;
+            margin-right: 30px;
+
+            .graphi{
+                width: 100%;
+                height:100%;
+                background-color: white;
+                border:1px solid @BordersOpacity;
+                border-radius:10px;
+
+                img{
+                    border-radius:10px;
+                    width:100%;
+                    height:100%;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width: 550px){
+
+        .large{
+            width: 100%;
+            border:none;
+            border-radius:0px 0px 0px 0px;
+
+            .container-img{
+                border-radius: 0px 0px 0px 0px;
+                height:200px;
+                img{
+                    border-radius: 0px 0px 0px 0px;
+    
+                }
+            }
+            .panel-info-details{
+                margin-top:5px;
+                padding:5px;
+                nav{
+                    padding:10px 0px;
+                    overflow-x: auto;
+                    white-space: nowrap;
+                }
+            }
+
+        }
+        .small{
+            display:none;
+        }
+        .list-box{
+            display: block;
+            width:100%;
+            height:auto;
+            overflow-x: auto; 
+            overflow-y: none;
+            white-space: nowrap;
+            margin-top:0px;
+            .small-box{
+                width:90%;
+                float:none;
+                display:inline-block;
+                padding:40px 10px;
+                margin:0px;
+    
+                .left{
+                    width:70%;
+                    box-sizing: border-box;
+    
+    
+                    strong{
+                        font-size:12px;
+                    }
+                    h2{
+                        font-size:20px;
+                        span{
+                            font-size:12px;
+                            margin-left:5px;
+                        }
+                    }
+                }
+                .right{
+                    width:30%;
+                    margin-top:20px;
+                    text-align: center;
+                    box-sizing: border-box;             
+                }
+            }
+            .small-box:hover{
+                transform: scale(1);
+    
+                .right{
+                    .icon{
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+
+        .container-graphi{
+            box-sizing: border-box;
+            display: inline-block;
+            width:100%;
+            
+            .big-graphi{
+                width:100%;                
+            }
+            .small-graphi{
+                width:50%;
+                float:none;
+                display: inline-block;
+                margin:0px;
+    
+            }
+        }
+    
+    }
+
+    // Contenedor de productos
+    .container-products-list{
+        padding:10px 0px;
+        width:95%;
+        overflow-x: auto;
+        white-space: nowrap;
+        .box-item-product{
+            margin-right: 20px;
+            z-index: 2;
+            vertical-align: top;
+            width:30%;
+            border:1px solid @BordersOpacity;
+            border-radius: 10px;
+            box-sizing: border-box;
+            background-color: @Default;
+            transition: .6s;
+            display:inline-block;
+            margin-bottom: 10px;
+            .container-img{
+                width:100%;
+                height:200px;
+                border-radius: 10px 10px 0px 0px;
+                box-sizing: border-box;
+                z-index: 1;
+
+                img{
+                    width:100%;
+                    height:100%;
+                    border-radius:10px 10px 0px 0px;
+                    z-index: 1;
+
+                }
+            }
+            .info-item-food{
+                
+                .info{
+                    padding: 30px 10px;
+                    box-sizing: border-box;
+                    text-align: center;
+                    .type-food{
+                        color: @Opacity;
+                        font-size:12px;
+                    }
+                    .name{
+                        font-weight: 200;
+                    }
+                    .price{
+                        color: @Primary;
+
+                        span{
+                            font-size:14px;
+                        }
+                    }
+                    .stars{
+                        .container-stars{
+                            .icon{
+                                color: @Danger;
+                                margin-right: 1px;
+                                font-size:12px;
+                            }
+                        }
+                        span{
+                            font-size:14px;
+                            color: @Opacity;
+                        }
+                    }
+                }
+                .buttons-hidden{
+                    z-index:0;
+                    position:relative;
+                    transition: .6s;
+                    text-align: center;
+                    box-sizing: border-box;
+                    button{
+                        width:100%;
+                        padding:5px;
+                        border:1px solid @Default;
+                        color:  @Default;
+                        font-weight: 200;
+                        font-size:14px;
+                        border-radius: 0px 0px 10px 10px;
+                        background-color: transparent;
+                        box-sizing: border-box;
+                        transition:.6s;
+                        pointer-events: none;
+                        cursor:pointer;
+                    }
+                    button:hover{
+                        background-color: @Primary;
+                        color: @Default;
+                        cursor:pointer;
+
+                    }
+                }
+            }
+        }
+        .box-item-product:hover{
+            transform: scale(1.02);
+            border:1px solid @Primary;
+            .info-item-food{
+                .buttons-hidden{
+                    border:none;
+                    button{
+                        pointer-events: fill;
+                        background-color: @Primary;
+                        color: @Default;
+                        cursor:pointer;
+                        border:1px solid @Primary;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width: 550px){
+
+        .large{
+            width: 100%;
+            border:none;
+            border-radius:0px 0px 0px 0px;
+
+            .container-img{
+                border-radius: 0px 0px 0px 0px;
+                height:200px;
+                img{
+                    border-radius: 0px 0px 0px 0px;
+    
+                }
+            }
+            .panel-info-details{
+                margin-top:5px;
+                padding:5px;
+                nav{
+                    padding:10px 0px;
+                    overflow-x: auto;
+                    white-space: nowrap;
+                }
+            }
+
+        }
+        .small{
+            display:none;
+        }
+        .list-box{
+            display: block;
+            width:100%;
+            height:auto;
+            overflow-x: auto; 
+            overflow-y: none;
+            white-space: nowrap;
+            margin-top:0px;
+            .small-box{
+                width:90%;
+                float:none;
+                display:inline-block;
+                padding:40px 10px;
+                margin:0px;
+    
+                .left{
+                    width:70%;
+                    box-sizing: border-box;
+    
+    
+                    strong{
+                        font-size:12px;
+                    }
+                    h2{
+                        font-size:20px;
+                        span{
+                            font-size:12px;
+                            margin-left:5px;
+                        }
+                    }
+                }
+                .right{
+                    width:30%;
+                    margin-top:20px;
+                    text-align: center;
+                    box-sizing: border-box;             
+                }
+            }
+            .small-box:hover{
+                transform: scale(1);
+    
+                .right{
+                    .icon{
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+
+        .container-graphi{
+            box-sizing: border-box;
+            display: inline-block;
+            width:100%;
+            
+            .big-graphi{
+                width:100%;                
+            }
+            .small-graphi{
+                width:50%;
+                float:none;
+                display: inline-block;
+                margin:0px;
+    
+            }
+        }
+
+         // Contenedor de productos
+    .container-products-list{
+        padding:10px 0px;
+        width:100%;
+        .box-item-product{
+            margin-right: 5px;
+            width:50%;
+            .container-img{
+                height:100px;
+            }
+            .info-item-food{
+                
+                .info{
+                    padding: 10px 5px;
+
+                    .name{
+                        font-size:12px;
+                    }
+                    .price{
+                        font-size:14px;
+
+                        span{
+                            font-size:12px;
+                        }
+                    }
+                    .stars{
+                        .container-stars{
+                            .icon{
+                                font-size:10px;
+                            }
+                        }
+                        span{
+                            font-size:10px; 
+                            color: @Opacity;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    }
+    // Equipo de trabajo
+    .team-working{
+        background-color:@Default;
+        padding:10px 10px;
+        margin-top:20px;
+        box-sizing: border-box;
+        border:1px solid @BordersOpacity;
+        border-radius: 10px;
+        .container-team{
+            margin-bottom:50px;
+
+            .top-nav{
+                display: inline-block;
+                width:100%;
+                box-sizing: border-box;
+                padding:30px 10px;
+                h1{
+                    float:left;
+                    margin:0px;
+                }
+                label{
+                    float:right;
+                    font-size:12px;
+                    color: @Opacity;
+                    margin-top:8px;
+                    margin-right: 10px;
+                }
+                .select{
+                    float:right;
+                    border-radius: 10px;
+                    border:1px solid @BordersOpacity;
+                    background-color: transparent;
+                    margin-right: 10px;
+                    padding:6px 20px;
+                    cursor: pointer;
+
+                    option{
+                        padding:10px;
+                        font-size: 14px;
+                        font-family: Roboco;
+                    }
+                }
+                button{
+                    vertical-align: middle;
+                    border-radius:100px;
+                    color: @Default;
+                    float:right;
+                    background-color: @Primary;
+                    border:1px solid @Primary;
+                    padding:6px 20px;
+                    cursor: pointer;
+                    transition:.3s;
+                }
+                button:hover{
+                    background-color: @Default;
+                    color: @Primary;
+                }
+            }
+            h1{
+                font-size:18px;
+                margin:20px 0px;
+                font-weight: 100;
+            }
+            table{
+                border:1px solid @BordersOpacity;
+                width:100%;
+                background-color: @Default;
+                text-align: left;
+                border-collapse: collapse;
+                th,td{
+                    margin:0px;
+                    padding:10px;
+                }
+                thead{
+                    background-color: @Primary;
+                    color: @Default;
+                    font-size:14px;
+                    border-bottom:2px solid @Primary;
+
+                    tr{
+                        cursor: default;
+                        background-color: @Primary;
+                    }
+                    tr:hover{
+                        background-color: @Primary;
+
+                    }
+                }
+                tr{
+                    font-size:12px;
+                    transition:.3s;
+                    cursor:pointer;
+                    border-bottom:1px solid @BordersOpacity;
+
+
+                    button{
+                        background-color: transparent;
+                        border:1px solid transparent;
+                        padding:10px;
+                        border-radius:10px;
+                        cursor:pointer;
+                        .icon{
+                            font-size:16px;
+                            transition:.3s;
+                            color: @Opacity;
+                        }
+                    }
+                    button:hover{
+                        .icon{
+                            color: black;
+                            transform: scale(1.4);
+                        }
+                    }
+                }
+                tbody{
+                     tr{
+                        td{
+                            .dropdown{
+                                position:relative;
+                                width:100%;
+                                display:inline-block;
+            
+                                .list_out{
+                                    cursor:default;
+                                    position:fixed;
+                                    z-index: 2;
+                                    background-color:@Default;
+                                    left:0;
+                                    bottom:0;
+                                    right:0;
+                                    box-sizing: border-box;
+                                    text-align: right;
+                                    border-top:1px solid @Primary;
+                                    transform: translateY(100%);
+                                    transition:.2s;
+                                    .close{
+                                        background-color: @Primary;
+                                        width:100%;
+                                        text-align: center;
+                                        button{
+                                            transition:.3s;
+                                            padding:0px;
+                                            .icon{
+                                                font-size:24px;
+                                                color: @Default;
+                                            }
+
+                                        }:hover{
+                                            transform: scale(1.05);
+                                        }
+                                    }
+                                    .head-list{
+                                        padding:10px 10px;
+                                        border-bottom:1px solid @BordersOpacity;
+                                        background-color: @Primary;
+                                        h3{
+                                            font-weight: 100;
+                                            color: @Default;
+                                        }
+                                    }
+                                    ul{
+
+                                        padding:30px;
+                                        li{
+                                            display:inline-block;
+                                            
+                                            button{
+                                                padding:10px;
+                                                border:1px solid @BordersOpacity;
+                                                margin-right: 10px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .list_outActive{
+                                    transform: translateY(0%);
+                                }
+                            }
+                        }
+                     }
+                }
+                tr:hover{
+                    background-color: #ccc;
+                }
+            }
+        }
+    }
+    // Pequeñas cajas financieras
+    .container-items-finance{
+        width:40%;
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: top;
+        .item-small-finance{
+            width:45%;
+            margin:0% 4%;
+            margin-bottom:2%;
+            margin-right:0%;
+            display:inline-block;
+            vertical-align: top;
+            background-color: @Default;
+            border:1px solid @BordersOpacity;
+            box-sizing: border-box;
+            padding:20px 10px;
+            border-radius:10px;
+            transition:.3s;
+            cursor: pointer;
+
+            .type-icon{
+                font-size:40px;
+                margin:auto;
+                color: @Amigable;
+                
+            }
+            h3{
+                font-weight: 100;
+                color: @Primary;
+                font-size:16px;
+                margin:20px 0px;
+            }
+            h1{
+                font-weight: 100;
+                font-size:20px;
+                margin-bottom:10px;
+                span{
+                    font-size:16px;
+                }
+            }
+            strong{
+                background-color: #f4f6fa;
+                padding:5px;
+                border-radius:10px;
+                color: @Primary;
+                font-weight: 100;
+                font-size:12px;
+                margin-right: 10px;
+            }
+            .txt{
+                font-weight: 100;
+                font-size:12px;
+                transition:.3s;
+            }
+            .porcent{
+                transition:.3s;
+                width:auto;
+                strong{
+                    margin-right: 2px;
+                    background-color:transparent;
+                }
+                .txt.danger{
+                    color: @Danger;
+                    transition:.3s;
+
+                    
+                }
+                .txt.positive{
+                    color: @Primary;
+                }
+            }
+            button{
+                width:50%;
+                margin:auto;
+                padding:5px;
+                box-sizing: border-box;
+                background-color: @Default;
+                border:1px solid @Amigable;
+                color: @Amigable;
+                border-radius: 10px;
+                transition:.3s;
+                cursor:pointer;
+                font-size:12px;
+            }
+            button:hover{
+                background-color: @Amigable;
+                color: @Default;
+            }
+            .porcent:hover{
+                .txt{
+                    border-bottom:1px solid @Danger;
+                }
+            }
+        }
+        .item-small-finance:hover{
+            transform: scale(1.05);
+        }
+
+        
+    }
+    .graphi-sell-month{
+        width:60%;
+        padding:10px;
+        box-sizing: border-box;
+        display:inline-block;
+        border-radius: 10px;
+        background-color: @Default;
+        .graph{
+            border:1px solid @BordersOpacity;
+            width:100%;
+            border-radius: 10px;
+        }
+        .list-services{
+            border:1px solid @BordersOpacity;
+            border-radius:10px;
+            padding:10px;
+            width:100%;
+            box-sizing: border-box;
+            max-height: 250px;
+            overflow-y: auto;
+            
+            .item-service{
+                width:100%;
+                padding:10px;
+                border-bottom:1px solid @BordersOpacity;
+                box-sizing: border-box;
+                transition:.3s;
+                cursor: pointer;
+                h3{
+                    font-weight: 100;
+                    font-size:14px;
+                }
+                strong{
+                    font-size:12px;
+                    font-weight: 400;
+                    .icon{
+                        margin-left:10px;
+                        font-size:14px;
+                        vertical-align: bottom;
+                        float:right;
+                    
+                    }
+                    .icon.check{
+                        color: green;
+                    }
+                    .icon.alert{
+                        color: orange;
+                        font-size:16px;
+                    }
+                    .icon.danger{
+                        color: @Danger;
+                    }
+                }
+            }
+            .item-service:hover{
+                background-color: #e9e6e6;
+            }
+        }
+
+    }
+    @media screen and(max-width: 1000px){
+        .container-items-finance{
+            width:50%;
+            .item-small-finance{
+                margin-left: 1%; 
+                width:48%;
+
+                h3{
+                    font-size:14px;
+                }
+                h1{
+                    font-size:16px;
+                    span{
+                        font-size:12px;
+                    }
+                }
+                strong{
+                    font-size:10px;
+                }
+                .txt{
+                    font-size:11px;
+                }
+            }
+        }
+        .graphi-sell-month{
+            width:50%; 
+        }
+    }
+    @media screen and(max-width: 700px){
+        .team-working{
+            padding:10px 0px;
+            border-left:0px;
+            border-right: 0px;
+            .container-team{
+                .top-nav{
+                    h1{
+                        font-size:14px;
+                        float:none;
+                    }
+                    .select{
+                        margin-top:10px;
+                        padding:6px 10px;
+                        font-size:12px;
+                        float:left;
+                    }
+                    button{
+                        margin-top:10px;
+                        font-size:12px;
+                    }
+                }
+                table{
+                    border:none;
+                    margin:0px;
+                    .responsive-h{
+                        display:none;
+                    }
+                    thead{
+                        font-size:10px;
+                        border-bottom:2px solid @BordersOpacity;
+
+                        tr{
+                            
+                            th{
+                                font-size:12px;
+                                font-weight: 100;
+                                background-color: @Default;
+                                color: #666;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                    tbody{
+                        tr{
+                            .first{
+                                overflow-x: auto;
+                                white-space: nowrap;
+
+                            }
+                            td{
+                                padding:10px 10px;
+                                font-size:12px;
+                                color: #666;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .container-finance-divs{
+            display:inline-block;
+            background-color: @Default;
+            width:100%;
+            .graphi-sell-month{
+                float:left;
+                position:relative;
+
+            }
+            .container-items-finance{
+                position:relative;
+                vertical-align: top;
+                width:70%;
+            }
+           
+        }
+        
+    }
+    @media screen and(max-width: 600px){
+        .container-finance-divs{
+            .container-items-finance{
+                width: 100%;
+                overflow-x: auto;
+                white-space: nowrap;
+                padding-left:2px;
+                .item-small-finance{
+                    width:70%;
+                }
+            }
+            .graphi-sell-month{
+                width:100%;
+                vertical-align: top;
+            }
+        }
+    }
+
+
+
+    // top inventary
+
+    .top-header-bottons{
+        display:inline-block;
+        width:100%;
+        background-color: @Default;
+        border:1px solid @BordersOpacity;
+        padding:10px;
+        box-sizing: border-box;
+
+        .left{
+            float:left;
+            label{
+                font-size:12px;
+            }
+            select{
+                border: 1px solid @BordersOpacity;
+                padding:5px 10px;
+                border-radius:10px;
+                margin-left:10px;
+                background-color: transparent;
+                font-size:12px;
+            }
+        }
+        .right{
+            float:right;
+            
+            select{
+                margin-right: 10px;
+                padding: 4px 10px;
+                border:1px solid @BordersOpacity;
+                border-radius: 10px;
+                background-color: @Primary;
+                color: white;
+
+                option{
+                    background-color: @Default;
+                    color: @Opacity;
+                }
+            }
+            label{
+                font-size:12px;
+                margin-right: 10px;
+            }
+            form{
+                float:left;
+                margin-right: 30px;
+                input{
+                    outline: 0px;
+                    border-radius:10px;
+                    padding:5px 10px;
+                    border:1px solid  @BordersOpacity;
+                    font-size:12px;
+                    transition:.3s;
+                }
+                input:focus{
+                    border:1px solid @Opacity;
+                }
+            }
+            .btn{
+                padding:5px 10px;
+                margin-right: 10px;
+                font-size:12px;
+                border-radius:10px;
+                border:1px solid @BordersOpacity;
+                background-color: @Default;
+                cursor:pointer;
+
+                .icon{
+                    vertical-align: middle;
+                }
+            }
+            .btn.create{
+                border:1px solid @Primary;
+                background-color: @Primary;
+                color:@Default;
+            }
+        }
+    }
+    // Inventario
+    .box-category-inventary{
+        width:100%;
+        margin:20px 0px;
+        margin-bottom:50px;
+
+        background-color:white;
+
+        .title-h1{
+            font-weight: 100;
+            font-size:26px;
+            padding:20px;
+        }
+
+        .scroll{
+            width:100%;
+            padding:10px;
+            box-sizing: border-box;
+            overflow-x: auto;
+            white-space:nowrap;
+
+            .box-inventary{
+                width:30%;
+                background-color: @Default;
+                border:1px solid @BordersOpacity;
+                display:inline-block;
+                border-radius:10px;
+                transition: .6s;
+                display:inline-block;
+                margin-right: 10px;
+                margin-bottom:10px;
+                cursor:pointer;
+                z-index: 1;
+
+                
+                .header-container{
+                    padding:10px;
+                    border-radius:10px 10px 0px 0px;
+                    background-color: @Primary;
+
+                    img{
+                        width:100%;
+                        height:150px;
+                        margin:0px;
+                        border-radius: 10px;
+                    }
+                    h3{
+                        font-weight: 100;
+                        color: @Default;
+                    }
+                    h1{
+                        color: @Default;
+                        font-weight: 100;
+                        font-size:26px;
+                        span{
+                            font-size:14px;
+                        }
+                    }
+                    .icon{
+                        font-size:30px;
+                        margin-right: 5px;
+                        color: @Default;
+                        vertical-align: middle;
+                    }
+                    strong{
+                        vertical-align: middle;
+                        color: @Default;
+                        font-size: 12px;
+                    }
+                }
+                .header-container.white{
+                    background-color: @Default;
+                    border-bottom:1px solid @Primary;
+                    h1{
+                            color: @Primary;
+                    }
+                    .icon{
+                        color: @Primary;
+                    }
+                    strong{
+                        color: @Primary;
+                    }
+                }
+                .container{
+                    padding:20px 10px;
+
+                    span{
+                        font-size:14px;
+                        font-weight: 100;
+                        strong{
+                            font-weight: 400;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .box-inventary:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    // Fixed información inventario
+    .info-category{
+        position:fixed;
+        z-index:1;
+        bottom:0;
+        left:0;
+        right: 0;
+        top:0;
+        border-top:2px solid #ccc;
+        background-color: @Default;
+        transform: translateY(100%);
+        transition: .3s;
+        box-sizing: border-box;
+        height: 100%;
+
+        .top-hidden{
+            border-bottom:1px solid @BordersOpacity;
+            width:100%;
+            text-align: center;
+            padding:10px;
+            button{
+                background-color: @Default;
+                border:none;
+                font-size: 16px;
+                color: @Opacity;
+                cursor:pointer;
+                outline: 0px;
+            }
+            button:hover{
+                color: black;
+            }
+        } 
+
+        .f{
+            .facture{
+                position:fixed;
+                width:100%;
+                padding: 10px;
+                right: 0;
+                bottom: 0;
+                box-sizing: border-box;
+                z-index: 1;
+                background-color: @Default;
+                height:500px;
+                transform: translateX(100%);
+                border-top:2px solid #666;
+                transition:.3s;
+                .header-top-buttons{
+                    width:100%;
+                    box-sizing: border-box;
+                    border-bottom: 1px solid solid;
+                    transform: .3s;
+                    display: inline-block;
+                    border-bottom: 1px solid @BordersOpacity;
+                    padding:3px;
+                    .backout{
+                        float:left;
+                        border: none;
+                        font-size:12px;
+                        padding:5px 15px;
+                        background-color: @Default;
+                        cursor:pointer;
+                        transition:.3s;
+    
+                    }
+                    .backout:hover{
+                        transform: scale(1.05);
+                    }
+                    .download{
+                        float:left;
+                        padding:5px 15px;
+                        color: white;
+                        border-radius:30px;
+                        border:1px solid @Primary;
+                        font-size:14px;
+                        background-color: @Primary;
+                        margin-left:5px;
+                        cursor:pointer;
+                        transition:.3s;
+                        .icon{
+                            font-size:20px;
+                            vertical-align: middle;
+                            margin-right: 10px;
+                        }
+                    }
+                    .download:hover{
+                        transform: scale(1.05);
+                    }
+                }
+                .header-title{
+                    border-bottom:1px solid @Opacity;
+                    padding:10px 0px;
+                    display:inline-block;
+                    width:100%;
+                    h1{
+                        font-weight: 100;
+                        float:left;
+                        margin:0px;
+                        margin-top:20px;
+                    }
+                    img{
+                        float:right;
+                        width:70px;
+                        height:70px;
+                        border-radius:100px
+                    }
+                }
+                .first-table{
+                    table{
+                        width:50%;
+                        tbody{
+                            th{
+                                padding:10px;
+                                font-size:14px;
+                                text-align: left;
+                                font-weight: 100;
+    
+                            }
+                            .first-space{
+                                text-align: left;    
+                                font-size:14px;
+                                font-weight: 300;
+                            }
+                        }
+                    }
+                }
+                .second-table{
+                    margin-top:50px;
+                    border-top:1px solid  @BordersOpacity;
+                    table{
+                        width:100%;
+    
+                        thead{
+                            td{
+                                text-align: left;
+
+                                th{
+                                    padding:10px;
+                                    text-align: left;
+                                    font-weight: 100;
+                                    font-size:14px;
+                                }
+                            }
+                        }
+                        tbody{
+                            tr{
+                                border:1px solid black;
+                                th{
+                                    text-align: left;
+                                    padding:10px;
+                                    font-size:14px;
+                                    font-weight: 100;
+                                    strong{
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .footer{
+                    padding:5px;
+                    margin-top:30px;
+                    width:100%;
+                    box-sizing: border-box;
+                    text-align: right;
+                    strong{
+                        font-size:12px;
+                        span{
+                            font-weight: 100;
+                        }
+                    }
+                }
+            }
+            .factureActive{
+                transform: translateY(0%);
+            
+            }
+        }
+
+
+        .top-info{
+            width:100%;
+            padding:5px;
+            box-sizing: border-box;
+            display:inline-block;
+            .left{
+                float:left;
+                h1{
+                    margin:0px;
+                    color: @Opacity;
+                    font-weight: 100;
+                }
+            }
+            .right{
+                float:right;
+            }
+        }
+        .scroll-div{
+            padding:10px;
+            width:100%;
+            box-sizing: border-box;
+            position:relative;
+            overflow-y: auto;
+            .container-scroll{
+            display: inline-block;
+                .left{
+                    float: left;
+                    width:30%;
+                    box-sizing: border-box;
+                    vertical-align: top;
+                    img{
+                        width:100%;
+                    }
+                }
+                .right{
+                    vertical-align: top;
+                    float: right;
+                    width:70%;
+                    padding:10px;
+                    box-sizing: border-box;
+    
+                    h3{
+                        margin:10px 0px;
+                    }
+                    strong{
+                        font-size:12px;
+                        font-weight: 100;
+                    }
+                    
+                    .info{
+                        table{
+                            border: none;
+                            width:100%;
+                            background-color: @Default;
+                            text-align: left;
+                            border-collapse: collapse;
+                            th,td{
+                                margin:0px;
+                                padding:10px;
+                            }
+                            thead{
+            
+                                tr{
+                                    border:none;
+                                    cursor: default;
+                                }
+                            }
+                            tr{
+                                font-size:12px;
+                                transition:.3s;
+                                border-bottom:none;
+            
+                                .input-change-valors{
+                                    width:90%;
+                                    padding:10px;
+                                    box-sizing: border-box;
+                                    border:none;
+                                    border-bottom:1px solid @BordersOpacity;
+                                    outline: 0px;
+                                    transition: .3s;
+                                    color: @Opacity;
+                                }
+                                
+                                .input-change-valors:focus{
+                                    resize:none;
+                                    border-bottom:1px solid @Primary;
+                                    color: black;
+                                }
+                                .textarea-change-valors{
+                                    resize:none;
+                                    width:90%;
+                                    padding:10px;
+                                    box-sizing: border-box;
+                                    border:none;
+                                    border-bottom:1px solid @BordersOpacity;
+                                    outline: 0px;
+                                    transition: .3s;
+                                    color: @Opacity;
+                                }
+                                .textarea-change-valors:focus{
+                                    resize:none;
+                                    border-bottom:1px solid @Primary;
+                                    color: black;
+                                }
+                                button{
+                                    background-color: transparent;
+                                    border:1px solid transparent;
+                                    padding:10px;
+                                    border-radius:10px;
+                                    cursor:pointer;
+                                    .icon{
+                                        font-size:16px;
+                                        transition:.3s;
+                                        color: @Opacity;
+                                    }
+                                }
+                                button:hover{
+                                    .icon{
+                                        color: black;
+                                        transform: scale(1.4);
+                                    }
+                                }
+                            }
+                            .update{
+                                width:50%;
+                                padding:10px;
+                                margin-top:30px;
+                                background-color: @Amigable;
+                                color: @Default;
+                                border:1px solid @Amigable;
+                                border-radius:10px;
+                                transition:.3s;
+                                cursor:pointer;
+                            }
+                            .update:hover{
+                                transform: scale(1.05);
+                            }
+    
+                        }
+                        .buttons-actions{
+                            margin-top:20px;
+                            .add{
+                                padding:10px 15px;
+                                margin-right: 10px;
+                                background-color: transparent;
+                                border:1px solid @BordersOpacity;
+                                border-radius: 10px;
+                                transition:.3s;
+                                cursor:pointer;
+                                .icon{
+                                    vertical-align: middle;
+                                    margin-right: 10px;
+                                }
+                            }
+                            .add.green{
+                                border:1px solid green;
+                                color: green;
+                            }
+                            .add:hover{
+                                transform: scale(1.05);
+                            }
+
+                            
+                        }
+                    }
+                }
+               
+            }
+            .bottom-history{
+                width:90%;
+                margin:auto;
+                margin-top:30px;
+
+                h3{
+                    font-weight: 200;
+                }
+                .table-history{
+
+                    table{
+                        width:100%;
+                        margin-top:30px;
+                        thead{
+                            th{
+                                padding:10px 0px;
+                                text-align: left;
+                                font-weight: 100;
+                                font-size:14px;
+                            }
+                        }
+                        tbody{
+                            tr{
+                                td{
+                                    text-align: left;
+                                    padding:10px 0px;
+                                    span{
+                                        font-size:12px;
+                                        color: black;
+                                    }
+                                    strong{
+                                        font-size:12px;
+                                    }
+                                    button{
+                                        background-color: @Default;
+                                        padding:5px 10px;
+                                        border-radius:7px;
+                                        border:1px solid @BordersOpacity;
+                                        font-size:12px;
+                                        cursor:pointer;
+                                        transition: .3s;
+                                    }   
+                                    button:hover{
+                                        border: 1px solid #666;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .info-categoryActive{
+        transform: translateY(0%);
+    }
+    .container-inventary{
+        width:100%;
+        box-sizing: border-box;
+        margin-top:10px;
+       
+
+        table{
+            border:1px solid @BordersOpacity;
+            width:100%;
+            background-color: @Default;
+            text-align: left;
+            border-collapse: collapse;
+            th,td{
+                margin:0px;
+                padding:10px;
+            }
+
+            th{
+                span{
+                    color: white;
+                }
+            }
+            thead{
+                background-color: @Primary;
+                color: @Default;
+                font-size:14px;
+                border-bottom:2px solid @Primary;
+
+                tr{
+                    cursor: default;
+                    background-color: @Primary;
+                }
+                tr:hover{
+                    background-color: @Primary;
+
+                }
+            }
+            tr{
+
+                td{
+                    max-width: 200px;
+                    img{
+                        width:20%;
+                        display:inline-block;
+                        vertical-align: middle;
+                    }
+                }
+                font-size:12px;
+                transition:.3s;
+                cursor:pointer;
+                border-bottom:1px solid @BordersOpacity;
+                span{
+                    font-size:12px;
+                    display: inline-block;
+                    margin-left:5px;
+                }
+                .state{
+                    border:1px solid @Primary;
+                    padding:5px 14px;
+                    border-radius:10px;
+                    color: white;
+                }
+
+                .state.check{
+                    background-color: green;
+                    border:1px solid green;
+                }
+                .state.alert{
+                    background-color: yellow;
+                    border:1px solid yellow;
+                    color: black;
+                }
+                .state.danger{
+                    background-color: @Danger;
+                    border:1px solid @Danger;
+                }
+                button{
+                    background-color: transparent;
+                    border:1px solid transparent;
+                    padding:5px 0px;
+                    transition:.3s;
+                    cursor:pointer;
+                    .icon{
+                        font-size:16px;
+                        transition:.3s;
+                        color: @Opacity;
+                        vertical-align: middle;
+
+                    }
+                    .icon.dangery{
+                        color: @Danger;
+                    }
+                }
+                button:hover{
+                    color: black;
+                    .icon{
+                        color: black;
+                    }
+                    
+                }
+                
+            }
+            tr:hover{
+                background-color: @BordersOpacity
+            }
+        }
+    }
+
+    @media screen and (max-width:1000px){
+       
+        .box-category-inventary{
+            .title-h1{
+                font-size:20px;
+            }
+            .scroll{
+                .box-inventary{
+                    .header-container{
+                        h3{
+                            font-size:14px;
+                        }
+                        h1{
+                            font-size:20px;
+                            span{
+                                font-size:14px;
+                            }
+                        }
+
+                        .icon{
+                            font-size:20px;
+                        }
+                    }
+                }
+            }
+        }
+        .container-inventary{
+            table{
+                .responsive-h{
+                    display:none;
+                }
+                th{
+                    span{
+                        color: #666;
+                    }
+                }
+                thead{
+                    background-color: @Default;
+                    tr{
+                        color: #666;
+                        th{
+                            white-space:nowrap;
+                            background-color: @Default;
+                            color: #666;
+                        }
+                    }
+                }
+                tr{
+                    td{
+                        white-space:nowrap;
+                        color: #666;
+                        padding:20px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:700px){
+        .top-header-bottons{
+            .left{
+                width:100%;
+                select{
+                    width:100%;
+                    margin:0px;
+                    margin-top:10px;
+                }
+            }
+            .right{
+                float: left;
+                width:100%;
+                margin-top:10px;
+
+                label{
+                    font-size:12px;
+                }
+                select{
+                    width:100%;
+                    margin:0px;
+                    margin-top:10px;
+                }
+
+                form{
+                    width:100%;
+                    margin-top:20px;
+                    input{
+                        width:100%;
+                        box-sizing: border-box;
+                        margin-bottom:20px;
+                    }
+
+                }
+                .btn{
+                    width:100%;
+                    box-sizing: border-box;
+                    margin-top:20px;
+                    border:1px solid @Amigable;
+                    color: @Amigable;
+                    padding:10px 0px;
+                }
+            }
+        }
+        .box-category-inventary{
+            margin-bottom:20px;
+
+            .title-h1{
+                font-size:20px;
+            }
+            .scroll{
+                .box-inventary{
+                    width:70%;
+                    .header-container{
+                        h3{
+                            font-size:14px;
+                        }
+                        h1{
+                            font-size:20px;
+                            span{
+                                font-size:14px;
+                            }
+                        }
+
+                        .icon{
+                            font-size:20px;
+                        }
+                    }
+                }
+            }
+        }
+        .info-category{
+            padding:0px;
+            max-height: 100%;
+
+            .f{
+                .facture{
+                    height:100%;
+
+                    .header-top-buttons{
+                        .backout{
+                            float:right;
+                            font-size:20px;
+                            padding:0px;
+                            background-color: transparent;
+                            transform:rotate(-90deg);
+                        }
+
+                    }
+                    .header-title{
+                        padding:10px;
+
+                        h1{
+                            margin-top:10px;
+                            font-size:20px;
+                        }
+                        img{
+                           width:50px;
+                           height:50px;
+                           margin-right: 10px; 
+                        }
+                    }
+                    .first-table{
+                        table{
+                            width:100%;
+                            tbody{
+                                th{
+                                    font-size:12px;
+                                    padding:20px 10px;
+                                }
+                            }
+                        }
+                    }
+                    .second-table{
+                        padding-top:20px;
+                        table{
+                            thead{
+                                td{
+                                    th{
+                                        font-size:12px;
+                                        strong{
+                                            font-size:12px;
+                                        }
+                                    }
+                                }
+                            }
+                            tbody{
+                                tr{
+                                    th{
+                                        font-size:12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .footer{
+                       margin-top:50px;
+                    }
+                }
+            }
+            .scroll-div{
+                position:fixed;
+                bottom:0;
+                left:0;
+                height:90%;
+                right: 0;
+                overflow-y: auto;
+                padding:0px;
+                .container-scroll{
+                    margin-top:30px;
+                    .left{
+                        width:100%;
+                        float:none;
+
+                        img{
+                            width:40%;
+                            margin-left:30%;
+                        }
+                    }
+                    .right{
+                        float:none;
+                        width:100%;
+
+                        h3{
+                            font-size:30px;
+                        }
+                        .info{
+                            .buttons-actions{
+                                .add{
+                                    width:100%;
+                                    margin-bottom:5px;
+                                    margin-right:2px;
+                                    font-size:12px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .bottom-history{
+                    box-sizing: border-box;
+                    width:100%;
+                    margin:none;
+                    padding:10px;
+
+                    .table-history{
+                        thead{
+                            tr{
+                                .responsive-h{
+                                    display:none;
+                                }
+                                th{
+                                    padding:10px 20px;
+                                    padding-left:0px;
+                                    white-space: nowrap;
+                                }
+                            }
+                        }
+                        tbody{
+                            tr{
+                                .responsive-h{
+                                    display:none;
+                                }
+                                td{
+                                    white-space: nowrap;
+                                    padding:10px 20px;
+                                    padding-left:0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        .container-inventary{
+            margin-top:0px;
+            table{
+                .responsive-h{
+                    display:none;
+                }
+                th{
+                    span{
+                        color: #666;
+                    }
+                }
+                thead{
+                    background-color: @Default;
+                    tr{
+                        color: #666;
+                        th{
+                            white-space:nowrap;
+                            background-color: @Default;
+                            color: #666;
+                        }
+                    }
+                }
+                tr{
+                    td{
+                        white-space:nowrap;
+                        color: #666;
+                        padding:20px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    // Información sobre los componentes de Gastos
+
+    .gastos-divs{
+        width:70%;
+        box-sizing: border-box;
+        border:1px solid @BordersOpacity;
+        background-color: @Default;
+        padding:10px;
+        display:inline-block;
+        .table{
+            width:100%;
+            background-color: @Default;
+            text-align: left;
+            border-collapse: collapse;
+
+            .tb{
+                width:100%;
+                border-collapse: collapse;
+                margin-bottom:30px;
+                max-height: 100px;
+                overflow-y: auto;
+
+                thead{
+                    background-color: @Default;
+                    color: @Opacity;
+                    font-size:14px;
+                    border:none;
+    
+                    tr{
+                        cursor: default;
+                        background-color: @Default;
+                        border-bottom: 1px solid @BordersOpacity;
+                        text-align: right;
+                        th{
+                            padding:10px;
+
+                        }
+                    }
+                }
+
+                tbody{
+                    width:100%;
+                        tr{
+                            border-bottom:1px solid @BordersOpacity;
+                            margin:0px;
+                            border-collapse: collapse;
+    
+                            
+                            td{
+                                text-align: right;
+                                padding:20px 10px;
+                                font-size:12px;
+                                color: @Opacity;
+                            }
+                            .type{
+                                text-align: left;
+                                font-weight: bold;
+                            }
+                            .dg{
+                                color: @Danger;
+                                font-size:16px;
+                                font-weight: 100;
+                            }
+                            .green{
+                                color: green;
+                                font-size:16px;
+                                font-weight: 100;;
+                            }
+                            button{
+                                padding:5px 10px;
+                                border:none;
+                                background-color: @Default;
+                                color: @Primary;
+                                cursor:pointer;
+                            }
+                        }
+                    
+                }
+                
+            }
+            .footer-pagination{
+                width:100%;
+                padding:5px 10px;
+                box-sizing: border-box;
+                text-align: right;
+                button{
+                    padding:10px;
+                    background-color: @Default;
+                    border:none;
+                    cursor: pointer;
+                    color: @Primary;
+                    .icon{
+                        font-size:20px;
+                        color: @Primary;
+                        vertical-align: middle;
+                    }
+                }
+                span{
+                    font-size:12px;
+                    color: @Opacity;
+                }
+            }
+        }
+        .div-options-select{
+            width: 100%;
+            padding:10px;
+            box-sizing: border-box;
+            text-align: right;
+
+            label{
+                font-size:12px;
+                color: @Opacity;
+                margin-right: 10px;;
+            }
+            select{
+                padding:5px 10px;
+                border:1px solid @BordersOpacity;
+                background-color: @Default;
+                font-size:12px;
+                border-radius:2px;
+                margin-right: 10px;
+
+                option{
+                    padding:5px;
+                    font-size:12px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+        }
+    }
+    .right-buttons-container{
+        display:inline-block;
+        padding:10px;
+        width:30%;
+        box-sizing: border-box;
+        vertical-align: top;
+
+        button{
+            width:100%;
+            padding:10px;
+            box-sizing: border-box;
+            font-size:14px;
+            margin-bottom:10px;
+            cursor:pointer;
+            transition: .3s;
+            border-radius: 10px;;
+            .icon{
+                margin-right: 10px;
+                vertical-align: middle;
+            }
+        }
+        .primarybtn{
+            background-color: @Primary;
+            color: @Default;
+            border:1px solid @Primary;
+        }
+        .defaultbtn{
+            background-color: @Default;
+            border:1px solid @BordersOpacity;
+        }
+        button:hover{
+            transform: scale(1.05);
+        }
+    }
+    .create-gastos{
+        position:fixed;
+        left:0;
+        right: 0;
+        bottom:0;
+        height:500px;
+        border-top:1px solid @BordersOpacity;
+        background-color: @Default;
+        padding:10px;
+        box-sizing: border-box;
+        transform: translateY(100%);
+        transition:.3s;
+        .header{
+            padding:20px 0px;
+            border-bottom: 1px solid @BordersOpacity;
+            h3{
+                font-size:20px;
+            }
+        }
+        .container-new-gastos{
+
+            form{
+                .responsive{
+                    width:50%;
+                    display:inline-block;
+                    padding:10px;
+                    box-sizing: border-box;
+                    vertical-align: top;
+
+                    label{
+                        font-size:14px;
+                    }
+                    .input{
+                        width:100%;
+                        padding:10px;
+                        border:2px solid @BordersOpacity;
+                        font-size:14px;
+                        box-sizing: border-box;
+                        outline: none;
+                        transition: .6s;
+                    }
+                    .input:focus{
+                        border:2px solid @Primary;
+                    }
+                    .select{
+                        width:100%;
+                        padding:10px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size:14px;
+                        border:1px solid @BordersOpacity;
+                        background-color: @Default;
+                        color: @Opacity;
+
+                        option{
+                            font-family: Arial, Helvetica, sans-serif;
+                        }
+                    }
+                    span{
+                        font-size:12px;
+                    }
+                    button{
+                        width:70%;
+                        margin-left:15%;
+                        padding:10px;
+                        border:1px solid @Primary;
+                        border-radius:10px;
+                        color: @Primary;
+                        background-color: @Primary;
+                        color: @Default;
+                        cursor:pointer;
+                    }
+                    button.cancel{
+                        background-color: @Default;
+                        color: @Opacity;
+                        border:1px solid @Opacity;
+                    }
+                    
+                }
+            }
+        }
+       
+    }
+    .create-gastos-Active{
+        transform: translateY(0%);
+    }
+    @media screen and(max-width: 750px) {
+        .gastos-divs{
+            width:100%;
+            padding:0px;
+            .table{
+                padding:0px 4px;
+                box-sizing: border-box;
+                .tb{
+                    thead{
+                        tr{
+                            th{
+                                padding:20px 10px;
+                                font-size:14px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                    tbody{
+                        tr{
+                            td{
+                                font-size:12px;
+                                font-weight: 100;
+                                padding:30px 4px;
+                                box-sizing: border-box;
+                            }
+                            .dg{
+                                font-size:14px;
+                            }
+                            .green{
+                                font-size:14px;
+                            }
+                        }
+                    }
+                }
+            }
+            .div-options-select{
+                padding:10px 0px;
+                border-bottom:1px solid #666;
+                label{
+                    font-size:12px;
+                }
+                select{
+                    width:95%;
+                    padding:5px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        .right-buttons-container{
+            position:fixed;
+            width:auto;
+            padding:20px 10px;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+            border-top:2px solid @BordersOpacity;
+            bottom:0;
+            left:0;
+            right:0;
+            background-color: @Default;
+            overflow-x: auto;
+            white-space: nowrap;
+
+            button{
+                width:60%;
+                display:inline-block;
+                margin:0px;
+                margin-right: 10px;
+                font-size:12px;
+                
+            }
+        }
+        .create-gastos{
+            .header{
+                display: inline-block;
+                width:100%;
+                h3{
+                    font-weight: 100;
+                    float: left;
+                }
+                .close{
+                    float:right;
+                    background-color: @Default;
+                    border:none;
+                }
+                
+            }
+            .container-new-gastos{
+                overflow-y: auto;
+                max-height: 100%;
+                form{
+                    .responsive{
+                        width:100%;
+                        padding:10px 5px;
+                        label{
+                            font-size:12px;
+                            color: #666;
+                        }
+                        .input{
+                            border:none;
+                            border-bottom:1px solid @BordersOpacity;
+                            padding:10px;
+                        }
+                        span{
+                            font-size:10px;
+                            color: #666;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Cuenta de finanzas
+
+    .header-options-back{
+        width:100%;
+        padding:10px 0px;
+        box-sizing: border-box;
+
+        button{
+            padding:10px;
+            background-color: transparent;
+            border:none;
+            color: @Primary;
+            transition:.3s;
+            cursor:pointer;
+            .icon{
+                font-size:24px;
+                vertical-align: middle;
+                color: @Primary;
+            }
+        }
+        button:hover{
+            transform: scale(1.1);
+        }
+    }
+    
+    .filter-div{
+        width:100%;
+        padding:10px;
+        box-sizing: border-box;
+        border:1px solid @BordersOpacity;
+        background-color: @Default;
+        display:inline-block;
+
+        h2{
+            float:left;
+            color: @Opacity;
+            margin-top:5px;
+            font-weight: 100;
+        }
+        .month{
+            float:right;
+            padding:10px;
+            background-color: @Default;
+            border:1px solid @BordersOpacity;
+            border-radius: 10px;
+            width:30%;
+
+            option{
+                font-size:14px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+    }
+    .title{
+       padding:20px 0px;
+       h1{
+        font-weight: 200;
+       }
+    }
+
+    @media screen and (max-width: 900px) {
+        .filter-div{
+            padding:5px;    
+            h2{
+                font-size:14px;
+            }
+            .month{
+                padding:5px;
+                width:100%;
+                margin-top:20px;
+    
+                option{
+                    font-size:12px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+        }
+        .title{
+            padding:20px 0px;
+            h1{
+                font-size:20px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 550px){
+    .div-container-component{
+        padding:2px 0px;
+        .title{
+            width:100%;
+            box-sizing: border-box;
+            padding:10px 20px;
+            h3{
+                font-weight: 100;
+                font-size:14px;
+            }
+        }
+    }
+}
+
+
+
+

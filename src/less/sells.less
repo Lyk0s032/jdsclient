@@ -1,0 +1,244 @@
+.container-register-sell{
+    position:fixed;
+    z-index:1;
+    bottom:0;
+    left:0;
+    right:0;
+    border-top:1px solid @BordersOpacity;
+    background-color: @Default;
+    transform: translateY(100%);
+    transition:.3s;
+    z-index:3;
+    
+    .header-and-close{
+        padding:20px 10px;  
+        border-bottom:1px solid @BordersOpacity;
+        display:inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        h1{
+            font-weight: 100;
+            float:left;
+            font-size:24px;
+        }
+        button{
+            float:right;
+            padding:5px;
+            border:none;
+            background-color: @Default;
+            cursor:pointer;
+            transition:.3s;
+
+            .icon{
+                font-size:16px;
+                color: @Opacity;
+            }
+        }
+        button:hover{
+            transform: scale(1.1);
+            .icon{
+                color: @Primary;
+            }
+        }
+    }   
+    .container-info-sells{
+        padding:10px;
+
+        .left-qr{
+            display: inline-block;
+            width: 30%;
+            box-sizing: border-box;
+            text-align: center;
+            vertical-align: middle;
+            img{
+                width:50%;
+            }
+            h3{
+                font-weight: 100;
+                font-size:14px; 
+            }
+            button{
+                padding:10px;
+                border:none;
+                background-color: @Primary;
+                color: @Default;
+                border-radius:10px;
+                margin-top:10px;
+                
+            }
+
+
+        }
+        .rigth-container-items{
+            display: inline-block;
+            width:70%;
+            box-sizing: border-box;
+            vertical-align: middle;
+            padding:10px;
+
+            .info-sell{
+                padding:10px;
+ 
+                h2{
+                    font-weight: 400;
+                    font-size:14px; 
+                    span{
+                        font-size:20px;
+                        font-weight: 100;
+                        float: right;
+                        font-style: italic;
+                    }
+                }
+                strong{
+                    font-weight: 400;
+                    font-size:14px;
+                    span{
+                        font-size:16px;
+                        float: right;
+                        font-style: italic;
+                    }
+                }
+            }
+
+            .table-container{
+                height:300px;
+                overflow-y: auto;
+                table{
+                    width:100%;
+                    border-collapse: collapse;
+
+
+                    thead{
+                        tr{
+                            th{
+                                border-bottom:1px solid @Opacity;
+                                padding:10px;
+                                text-align: left;
+                                border-top:none; 
+                                font-size:12px;
+                            }
+                        }
+                    }
+                    tbody{
+                        border:1px solid @BordersOpacity;
+                        border-top:none;
+                        tr{
+                            td{
+                                padding:10px;
+                                border-bottom:1px solid @BordersOpacity;
+
+                                font-size:12px;
+                                color: @Opacity;
+
+                                img{
+                                    width:40px;
+                                    height: 40px;
+                                    border-radius:100px;
+                                    vertical-align: middle;
+                                    margin-right: 10px
+                                }
+                            }
+                        }
+                        span{
+                            font-size:14px;
+                            color: #666;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+.container-register-sell-active{
+    transform: translateY(0%);
+}
+@media screen and (max-width: 1000px){
+    .container-register-sell{
+        max-height: 90%;
+        overflow-y: auto;
+        .header-and-close{
+            padding:10px 10px;
+
+            h1{
+                font-size:18px;
+            }
+            button{
+                .icon{
+                    font-size:12px;
+                }
+            }
+        }
+        .container-info-sells{
+            padding:0px;
+
+            .left-qr{
+                width:100%;
+                margin-top:10px;
+                img{
+                    width:20%;
+                    margin:2%;
+                    vertical-align: top;
+                }
+                h3{
+                    margin-top:10px;
+                    font-size:20px;
+                }
+                button{
+                    float:right;
+                    margin-right: 10px;
+                    display: none;
+                }
+            }
+            .rigth-container-items{
+                width:100%;
+                padding:0px;
+                margin-top:20px;
+                border-top:1px solid @BordersOpacity;
+                
+                .info-sell{
+                    padding:10px 10px;
+                    h2{
+                        font-size:12px;
+
+                        span{
+                            font-size:16px;
+                            font-style: normal;
+                        }
+                    }
+                    strong{
+                        font-size:12px;
+
+                        span{
+                            font-size:14px;
+                            font-style: normal;
+                        }
+                    }
+                }
+                .table-container{
+                    thead{
+                        tr{
+                            th{
+                                font-size:12px;
+                                font-weight: 100;
+                            }
+                            .responsive-h{
+                                display:none;
+                            }
+                        }
+                    }
+                    tbody{
+                        tr{
+                            td{
+                                font-size:10px;
+                            }
+                            .responsive-h{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
