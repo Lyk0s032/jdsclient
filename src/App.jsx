@@ -31,7 +31,7 @@ function App() {
               { /* Menu*/}
               <Route exact path="/menu/:business*" element={<Menu />} />
               { /* Business */}
-              <Route path="/business/*" element={<Business />}/>
+              <Route exact path="/business/*" element={<Business />}/>
             </Routes>
         </Router>
 
