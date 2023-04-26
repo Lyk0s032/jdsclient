@@ -13,10 +13,10 @@ export default function NavDefault(){
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/login"><button className='acceder'>Acceder</button></Link>
+                            <Link to="/login/"><button className='acceder'>Acceder</button></Link>
                         </li>
                         <li>
-                            <Link to="/planes"><button className='plans'>Planes y servicios</button></Link>
+                            <Link to="/planes/"><button className='plans'>Planes y servicios</button></Link>
                         </li>
                     </ul>
                 </nav>
